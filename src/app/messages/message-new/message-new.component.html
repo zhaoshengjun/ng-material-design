@@ -19,6 +19,7 @@
   </mat-step>
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Enter message</ng-template>
       <mat-form-field>
         <input
           matInput
