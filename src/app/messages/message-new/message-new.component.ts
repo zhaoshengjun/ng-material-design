@@ -9,6 +9,13 @@ import { FormBuilder, FormGroup, Validator, Validators } from "@angular/forms";
 export class MessageNewComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  priorities: string[] = ["High", "Medium", "Low"];
+  departments: object[] = [
+    { id: 1, name: "Compliants" },
+    { id: 2, name: "Loyalty" },
+    { id: 3, name: "Promotions" }
+  ];
+
   constructor(private formBuild: FormBuilder) {}
 
   ngOnInit() {

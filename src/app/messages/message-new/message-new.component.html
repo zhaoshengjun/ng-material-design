@@ -10,6 +10,21 @@
           required
         />
       </mat-form-field>
+      <mat-form-field>
+        <input
+          type="text"
+          formControlNam="priorityCtrl"
+          placeholder="Priority"
+          matInput
+          [matAutocomplete]="auto"
+          required
+        />
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let priority of priorities" [value]="priority">
+            {{ priority }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
       <div>
         <button mat-icon-button matStepperNext>
           <mat-icon>arrow_forward</mat-icon>

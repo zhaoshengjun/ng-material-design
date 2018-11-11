@@ -6,6 +6,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatStepperModule } from "@angular/material/stepper";
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
 
 import { MessagesRoutingModule } from "./messages-routing.module";
 import { MessageListComponent } from "./message-list/message-list.component";
@@ -22,6 +23,7 @@ import { MessageNewComponent } from "./message-new/message-new.component";
     MatFormFieldModule,
     MatInputModule,
     MatStepperModule,
+    MatAutocompleteModule,
     MessagesRoutingModule
   ]
 })
