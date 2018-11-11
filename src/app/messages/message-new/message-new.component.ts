@@ -20,10 +20,16 @@ export class MessageNewComponent implements OnInit {
 
   ngOnInit() {
     this.firstFormGroup = this.formBuild.group({
-      emailCtrl: ["", Validators.required]
+      emailCtrl: ["", Validators.required],
+      priorityCtrl: ["", Validators.required],
+      departmentCtrl: ["", Validators.required]
     });
     this.secondFormGroup = this.formBuild.group({
       messageCtrl: ["", Validators.required]
     });
+  }
+
+  getDepartmentName(department: object) {
+    return department ? department["name"] : undefined;
   }
 }
