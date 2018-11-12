@@ -9,5 +9,18 @@
       ></mat-datepicker-toggle>
       <mat-datepicker #simpleDate></mat-datepicker>
     </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Filtered date"
+        [min]="minDate"
+        [matDatepicker]="filterDate"
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="filterDate"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #filterDate></mat-datepicker>
+    </mat-form-field>
   </mat-card-content>
 </mat-card>
