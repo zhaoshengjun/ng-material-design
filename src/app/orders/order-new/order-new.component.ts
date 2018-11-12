@@ -1,3 +1,5 @@
+import { Validators } from "@angular/forms";
+import { FormControl } from "@angular/forms";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -7,7 +9,10 @@ import { Component, OnInit } from "@angular/core";
 })
 export class OrderNewComponent implements OnInit {
   minDate = new Date();
+  dateCtrl: FormControl;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.dateCtrl = new FormControl("", [Validators.required]);
+  }
 }

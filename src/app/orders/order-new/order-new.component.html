@@ -22,5 +22,22 @@
       ></mat-datepicker-toggle>
       <mat-datepicker #filterDate></mat-datepicker>
     </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Valid date"
+        [min]="minDate"
+        [matDatepicker]="validDate"
+        [formControl]="dateCtrl"
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="validDate"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #validDate></mat-datepicker>
+      <mat-error align="end" *ngIf="dateCtrl.hasError('required')">
+        A valid date mm/dd/yyyy is required.
+      </mat-error>
+    </mat-form-field>
   </mat-card-content>
 </mat-card>
