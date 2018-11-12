@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
-  selector: 'app-customer-new',
-  templateUrl: './customer-new.component.html',
-  styleUrls: ['./customer-new.component.css']
+  selector: "app-customer-new",
+  templateUrl: "./customer-new.component.html",
+  styleUrls: ["./customer-new.component.css"]
 })
 export class CustomerNewComponent implements OnInit {
+  emailFormControl: FormControl;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.emailFormControl = new FormControl("", [
+      Validators.required,
+      Validators.email
+    ]);
   }
-
 }
