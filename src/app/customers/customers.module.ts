@@ -6,6 +6,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { MatInputModule, MatInput } from "@angular/material/input";
 import { MatDialogModule } from "@angular/material/dialog";
+import { MatRadioModule } from "@angular/material/radio";
 
 import { CustomersRoutingModule } from "./customers-routing.module";
 import { CustomerListComponent } from "./customer-list/customer-list.component";
@@ -29,6 +30,7 @@ import { RepDialogComponent } from "./rep-dialog/rep-dialog.component";
     MatCardModule,
     MatInputModule,
     MatDialogModule,
+    MatRadioModule,
     CustomersRoutingModule
   ],
   entryComponents: [RepDialogComponent]
