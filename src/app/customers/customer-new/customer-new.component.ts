@@ -33,6 +33,11 @@ export class CustomerNewComponent implements OnInit {
   }
 
   openUndoSnackbar() {
-    const snackbarRef = this.snackbar.open("Customer Saved", "UNDO", {});
+    const snackbarRef = this.snackbar.open("Customer Saved", "UNDO", {
+      horizontalPosition: "end"
+    });
+    snackbarRef.onAction().subscribe(result => {
+      alert("undo save");
+    });
   }
 }
