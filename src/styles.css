@@ -1,4 +1,9 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body {
-  font-family: Roboto, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.tooltip-example {
+    font-size: 90%;
+    background: purple;
 }
