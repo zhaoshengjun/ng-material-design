@@ -51,4 +51,10 @@ export class OrderListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  selectAll() {
+    ELEMENTS_DATA.forEach(
+      (element) => (element.isChecked = !element.isChecked)
+    );
+  }
 }
