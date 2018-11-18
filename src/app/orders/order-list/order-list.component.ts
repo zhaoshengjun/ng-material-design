@@ -29,6 +29,62 @@ const ELEMENTS_DATA = [
     total: 59.99,
     description: "Item D",
     isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 100,
+    total: 29.99,
+    description: "Item A",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 101,
+    total: 49.99,
+    description: "Item B",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 102,
+    total: 9.99,
+    description: "Item C",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 103,
+    total: 59.99,
+    description: "Item D",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 100,
+    total: 29.99,
+    description: "Item A",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 101,
+    total: 49.99,
+    description: "Item B",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 102,
+    total: 9.99,
+    description: "Item C",
+    isChecked: false
+  },
+  {
+    orderDate: new Date(),
+    orderNumber: 103,
+    total: 59.99,
+    description: "Item D",
+    isChecked: false
   }
 ];
 
