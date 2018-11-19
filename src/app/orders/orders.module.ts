@@ -8,6 +8,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
+import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
 
@@ -29,6 +30,7 @@ import { MatInputModule } from "@angular/material/input";
     MatInputModule,
     MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
     MatDatepickerModule,
     MatMomentDateModule,
     MatTabsModule,
