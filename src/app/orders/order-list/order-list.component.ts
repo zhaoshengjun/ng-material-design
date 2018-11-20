@@ -103,6 +103,7 @@ export class OrderListComponent implements OnInit {
   ];
   dataSource: MatTableDataSource<object>;
   length = 100;
+  pageIndex = 0;
   pageSize = 10;
   pageSizeOptions = [1, 2, 5, 10];
   pageEvent: PageEvent;
@@ -127,5 +128,9 @@ export class OrderListComponent implements OnInit {
     );
   }
 
-  onPageChange(evt) {}
+  onPageChange(evt) {
+    this.pageSize = evt.pageSize;
+    this.pageIndex = evt.pageIndex;
+    this.loadData(this.pageIndex, this.pageSize);
+  }
 }
