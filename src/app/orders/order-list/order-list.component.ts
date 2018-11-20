@@ -118,6 +118,7 @@ export class OrderListComponent implements OnInit {
   }
   ngOnInit() {
     this.loadData(0, this.pageSize);
+    this.dataSource.sort = this.sort;
   }
 
   selectAll() {
